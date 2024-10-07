@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> <!-- Site google fonts link -->
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,54 +14,170 @@
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
 
-  We are creatives
+  <section class="hero">
+    <header>
+      <a href="index.html"><img src="images/logo.svg"></a>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="images/icon-hamburger.svg" class="mobile-menu" id="menu" >
+    </header>
+    <div class="header-text">
+      <h1>We are creatives</h1>
+      <img src="images/icon-arrow-down.svg">
+    </div>
+  </section>
 
-  Transform your brand
+  <section class="features">
+    <article>
+      <div class="left-col">
+        <div class="left-col-text">
+          <h2>Tranform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you. 
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+      <div class="right-col">
+        <picture>
+          <source media="(max-width: 375px)" srcset="images/mobile/image-transform.jpg">
+          <img src="images/desktop/image-transform.jpg">
+        </picture>
+      </div>
+    </article>
 
-  Learn more
+    <article>
+      <div class="right-col">
+        <picture>
+          <source media="(min-width: 280px)" srcset="images/mobile/image-stand-out.jpg">
+          <img src="images/desktop/image-stand-out.jpg">
+        </picture>
+      </div>
+      <div class="left-col">
+        <div class="left-col-text">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers, photographers, videographers, 
+            and copywriters, we’ll build and extend your brand in digital places. 
+          </p>
+          <a href="#">Learn more</a>
+        </div> 
+      </div>
+    </article>
 
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <article>
+      <div class="left-col">
+        <div class="left-col-text">
+          <h3>Graphic design</h3>
+          <p>
+            Great design makes you memorable. We deliver artwork that underscores your brand 
+            message and captures potential clients’ attention.
+          </p>
+        </div>
+      </div>
+      <div class="left-col">
+        <div class="left-col-text">
+          <h3>Photography</h3>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="testimonials">
+    <h3>Client testimonials</h3>
+    <div class="testimonial-row">
+      <div class="testimonial-col">
+        <img src="images/image-emily.jpg">
+        <p>
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </p>
+        <div class="client-name">
+          <h4>Emily R.</h4>
+          <p>Marketing Director</p>
+        </div>
+      </div>
+      <div class="testimonial-col">
+        <img src="images/image-thomas.jpg">
+        <p>
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        </p>
+        <div class="client-name">
+          <h4>Thomas S.</h4>
+          <p>Chief Operating Officer</p>
+        </div>
+      </div>
+      <div class="testimonial-col">
+        <img src="images/image-jennie.jpg">
+        <p>
+          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        </p>
+        <div class="client-name">
+          <h4>Jennie F.</h4>
+          <p>Business Owner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="gallery">
+    <picture>
+      <source media="max-width: 375px" srcset="images/mobile/image-gallery-milkbottles.jpg">
+      <img src="images/desktop/image-gallery-milkbottles.jpg">
+    </picture>
+    <picture>
+      <source media="max-width: 375px" srcset="images/mobile/image-gallery-orange.jpg">
+      <img src="images/desktop/image-gallery-orange.jpg">
+    </picture>
+    <picture>
+      <source media="max-width: 375px" srcset="images/mobile/image-gallery-cone.jpg">
+      <img src="images/desktop/image-gallery-cone.jpg">
+    </picture>
+    <picture>
+      <source media="max-width: 375px" srcset="images/mobile/image-gallery-sugarcubes.jpg">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg">
+    </picture>
   </div>
+
+  <footer>
+    <iframe width="1100" height="500"src="//html5.gamedistribution.com/rvvASMiM/3b79a8537ebc414fb4f9672a9b8c68c8/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3Nub3dyaWRlcjNkLmNvbS8iLCJwYXJlbnREb21haW4iOiJzbm93cmlkZXIzZC5jb20iLCJ0b3BEb21haW4iOiJzbm93cmlkZXIzZC5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" frameborder="0"></iframe>
+
+    <nav>
+      <a href="#"><img src="images/logo.svg"></a>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+    
+    <ul>
+      <li><a href="#"><img src="images/icon-facebook.svg"></a></li>
+      <li><a href="#"><img src="images/icon-instagram.svg"></a></li>
+      <li><a href="#"><img src="images/icon-twitter.svg"></a></li>
+      <li><a href="#"><img src="images/icon-pinterest.svg"></a></li>
+    </ul>
+
+    About
+    Services
+    Projects
+    Contact
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Az en nevem tomo</a>.
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
-</html>
+</html> 
